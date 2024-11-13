@@ -1,0 +1,4 @@
+<div>
+  {{ filename }} {{ captchaReady ? "true" : "false" }}
+  <button (click)="downloadFile()" [disabled]="!captchaReady">Download</button>
+</div>
